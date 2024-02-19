@@ -1,0 +1,149 @@
+<section class="vh-300">
+    <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-12 col-xl-11">
+                <div class="card text-black" style="border-radius: 25px;">
+                    <div class="card-body p-md-5">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+                                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Đăng Ký Ngay</p>
+
+                                <form class="mx-1 mx-md-4" name="frmRegister" ng-init="studentR.marks='0'">
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <input type="text" name="username" id="form3Example3c1"
+                                                ng-model="studentR.username" class="form-control" required
+                                                minlength="6" />
+                                            <small ng-show="frmRegister.username.$error.required"
+                                                class="form-text text-danger">Vui lòng nhập
+                                                tên tài khoản</small>
+                                           
+                                            <small ng-show="frmRegister.username.$error.minlength"
+                                                class="form-text text-danger">Tên tài khoản
+                                                phải hơn 6 kí tự</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <label class="form-label" for="form3Example3c2">Nhập Họ Tên</label>
+                                            <input type="text" name="fullname" id="form3Example3c2"
+                                                ng-model="studentR.fullname" class="form-control" required
+                                                minlength="6" />
+                                            <small ng-show="frmRegister.fullname.$error.required"
+                                                class="form-text text-danger">Vui lòng nhập
+                                                họ tên đầy đủ</small>
+                                            <small ng-show="frmRegister.fullname.$error.minlength"
+                                                class="form-text text-danger">Họ Tên Phải
+                                                trên 5 kí tự</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <label class="form-label" for="form3Example4c5">Nhập Email</label>
+                                            <input type="email" id="form3Example4c5" class="form-control"
+                                                ng-model="studentR.email" name="email" required />
+                                            <small ng-show="frmRegister.email.$error.required"
+                                                class="form-text text-danger">Vui lòng nhập
+                                                email</small>
+                                            <small ng-show="frmRegister.email.$error.email"
+                                                class="form-text text-danger">Không đúng định dạng
+                                                email</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <label class="form-label" name="password" for="form3Example4c3">Mật
+                                                Khẩu</label>
+                                            <input type="password" id="form3Example4c3" ng-model="studentR.password"
+                                                name="password" class="form-control" required minlength="6" />
+                                            <small ng-show="frmRegister.password.$error.required" id="password"
+                                                class="form-text text-danger">Vui lòng nhập mật khẩu</small>
+                                            <small ng-show="frmRegister.password.$error.minlength" id="password"
+                                                class="form-text text-danger">Mật khẩu phải hơn 6 kí tự</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <label class="form-label" for="repassword">Nhập Lại Mật Khẩu</label>
+                                            <input type="password" id="repassword" name="repassword"
+                                                ng-model="repassword" class="form-control" required re-pass />
+                                            <small ng-show="frmRegister.repassword.$error.required"
+                                                class="form-text text-danger">Vui lòng
+                                                nhập lại mật khẩu</small>
+                                            <small
+                                                ng-show="frmRegister.repassword.$invalid && !frmRegister.repassword.$error.required"
+                                                class="form-text text-danger">Mật khẩu nhập lại không khớp</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <label class="form-label" for="form3Example4c6">Học Phí</label>
+                                            <input type="number" id="schoolfee" class="form-control" ng-model="studentR.schoolfee"
+                                              name="schoolfee" required min="2000000" />
+                                            <small ng-show="frmRegister.schoolfee.$error.required" class="form-text text-danger">Vui lòng nhập
+                                              học phí</small>
+                                            <small ng-show="frmRegister.schoolfee.$error.min" id="schoolfee" class="form-text text-danger">Học
+                                              phí phải hơn 2 triệu</small>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin-left: 20px;" class="mb-4">
+                                        <label for="genderSelect" class="form-label">Giới tính</label>
+                                        <select class="form-select" id="genderSelect" ng-model="studentR.gender"
+                                          ng-init="studentR.gender='true'" name="gender">
+                                          <option value="true" ng-model="studentR.gender" id="gender1">Nam</option>
+                                          <option value="false" ng-model="studentR.gender" id="gender2">Nữ</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <label for="dobSelect" class="form-label">Ngày Sinh (yyyy-mm-dd)</label>
+                                            <input name="birthday" ng-model="studentR.birthday" type="text" id="birthday" class="form-control border-indigo" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" required>
+                                              
+                                              <small ng-show="frmRegister.birthday.$error.required" class="form-text text-danger">Vui lòng nhập ngày sinh</small>
+                                              <small ng-show="frmRegister.birthday.$error.pattern" class="form-text text-danger">Không đúng định dạng ngày sinh</small>
+                                            <!-- Thêm các điều kiện kiểm tra khác nếu cần-->
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                        <button type="button" class="btn btn-primary btn-lg"
+                                            ng-disabled="frmRegister.$invalid"  ng-click="register()">Register</button>
+                                    </div>
+                                    <p class="text-center">bạn đã có tài khoản?<a class="text-primary"
+                                            href="#!login">Đăng Nhập Ngay</a></p>
+
+                                </form>
+
+                            </div>
+                            <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+                                    class="img-fluid" alt="Sample image">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

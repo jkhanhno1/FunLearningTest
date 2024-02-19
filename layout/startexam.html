@@ -1,0 +1,31 @@
+
+		<div id='container'>
+		 <div class="card" style="height: 500px;">
+
+            <div id='title' class="text-center">
+				<h1 class="p-2">{{subject.Name}}</h1>
+                <h3>Thời gian : {{ (timer - timer % 60) / 60
+                }}:{{ timer % 60 }}</h3>
+			</div>
+            <div class="test p-5">
+                <h3 class="p-2">{{indexQ+1 +"."+questions[indexQ].Text}}</h1>
+                <div class="form-check" ng-repeat="Answers in questions[indexQ].Answers ">
+                    <input ng-model="traloi[indexQ].Answer" class="form-check-input" name="bgroup"
+                    type="radio" id="{{'Answers'+$index}}" value="{{Answers.Id}}" required>
+                    <label class="form-check-label" for="{{'Answers'+$index}}">
+                       {{Answers.Text}}
+                    </label>
+                </div>
+                 <div class="p-3">
+                    <div class="btn btn-primary"ng-click="finish()" >Kết thúc</div>
+                    <div class="btn btn-primary" ng-click="next()" >Tiếp</div>
+
+                 </div>
+            </div>
+         </div>
+
+
+   			
+    	</div>
+
+	

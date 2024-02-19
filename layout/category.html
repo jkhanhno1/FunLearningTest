@@ -1,0 +1,35 @@
+<body>
+    <h1>Các Danh Mục Bài Thi</h1>
+    <div class="py-5">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col" ng-repeat="item in subjects | limitTo:6:cout">
+          <div class="card h-100">
+           <a href="#!exam/{{item.Id}}">
+            <img ng-src="image/logos/{{item.Logo}}" class="card-img-top"
+            alt="Hollywood Sign on The Hill" />
+          <div class="card-body">
+            <h5 class="card-title">{{item.Name}}</h5>
+            <p class="card-text">
+            </p>
+          </div>
+           </a>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    <div class="text-center">
+        <div class="btn btn-success" ng-click="prev()">prev</div>
+        <div class="btn btn-success" ng-click="next()">next</div>
+
+    </div>
+    
+  
+  </body>
+
+  <style>
+    img.card-img-top {
+    width: 70% !important;
+}
+  </style>
