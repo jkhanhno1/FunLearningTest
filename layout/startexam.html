@@ -1,6 +1,6 @@
 
 		<div id='container'>
-		 <div class="card" style="height: 500px;">
+		 <div class="card">
 
             <div id='title' class="text-center">
 				<h1 class="p-2">{{subject.Name}}</h1>
@@ -9,10 +9,10 @@
 			</div>
             <div class="test p-5">
                 <h3 class="p-2">{{indexQ+1 +"."+questions[indexQ].Text}}</h1>
-                <div class="form-check" ng-repeat="Answers in questions[indexQ].Answers ">
+                <div class="form-check p-2" ng-repeat="Answers in questions[indexQ].Answers ">
                     <input ng-model="traloi[indexQ].Answer" class="form-check-input" name="bgroup"
                     type="radio" id="{{'Answers'+$index}}" value="{{Answers.Id}}" required>
-                    <label class="form-check-label" for="{{'Answers'+$index}}">
+                    <label class="form-check-label"style="overflow-wrap: break-word;" for="{{'Answers'+$index}}">
                        {{Answers.Text}}
                     </label>
                 </div>
