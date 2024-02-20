@@ -4,7 +4,7 @@
 
             <div id='title' class="text-center">
 				<h1 class="p-2">{{subject.Name}}</h1>
-                <h3>Thời gian : {{ (timer - timer % 60) / 60
+                <h3>Thời gian {{ (timer - timer % 60) / 60
                 }}:{{ timer % 60 }}</h3>
 			</div>
             <div class="test p-5">
@@ -12,7 +12,7 @@
                 <div class="form-check p-2" ng-repeat="Answers in questions[indexQ].Answers ">
                     <input ng-model="traloi[indexQ].Answer" class="form-check-input" name="bgroup"
                     type="radio" id="{{'Answers'+$index}}" value="{{Answers.Id}}" required>
-                    <label class="form-check-label"style="overflow-wrap: break-word;" for="{{'Answers'+$index}}">
+                    <label class="form-check-label"style="word-break: break-all;" for="{{'Answers'+$index}}">
                        {{Answers.Text}}
                     </label>
                 </div>
