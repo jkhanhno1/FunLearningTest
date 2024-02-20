@@ -16,11 +16,17 @@
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
         rel="stylesheet" />
     <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css"
+        integrity="sha512-SUwyLkI1Wgm4aEZkDkwwigXaOI2HFLy1/YW73asun4sfvlkB9Ecl99+PHfCnfWD0FJjIuFTvWMM7BZPXCckpAA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"
+        integrity="sha512-bUg5gaqBVaXIJNuebamJ6uex//mjxPk8kljQTdM1SwkNrQD7pjS+PerntUSD+QRWPNJ0tq54/x4zRV8bLrLhZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css"
+        integrity="sha512-42kB9yDlYiCEfx2xVwq0q7hT4uf26FUgSIZBK8uiaEnTdShXjwr8Ip1V4xGJMg3mHkUt9nNuTDxunHF0/EgxLQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- cdn  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.10.5/sweetalert2.all.min.js"
         integrity="sha512-cAiOMQ6IleoiPyH2UGR2k9OCclUh6tFL6RMnFsH26pntGnKyNtjwFpD7CodlP/TvYz+F7vLoBJQmIgSvScdzQA=="
@@ -28,9 +34,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.10.5/sweetalert2.min.css"
         integrity="sha512-OWGg8FcHstyYFwtjfkiCoYHW2hG3PDWwdtczPAPUcETobBJOVCouKig8rqED0NMLcT9GtE4jw6IT1CSrwY87uw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"
         integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -40,6 +50,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
     <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+
 
 
     <script src="./app/myApp.js"></script>
@@ -62,34 +73,35 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
             <div class="container px-5">
-                <a class="navbar-brand" href="#!index"><span class="fw-bolder text-primary">TS000</span></a>
+                <a class="navbar-brand" href="#!index"><span class="fw-bolder text-primary fs-2">TS000</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation"><span
                         class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                        <li class="nav-item"><a class="nav-link" href="#!index">Trang Chủ</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!about">Giới Thiệu</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!contact">Liên Hệ</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!faq">Hỏi Đáp</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!category">Danh Mục</a></li>
+                        <li class="nav-item navssss"><a class="nav-link active" href="#!index"> <i
+                                    class="fas fa-home"></i> Trang Chủ</a></li>
+                        <li class="nav-item navssss"><a class="nav-link" href="#!about">Giới Thiệu</a></li>
+                        <li class="nav-item navssss"><a class="nav-link" href="#!contact">Liên Hệ</a></li>
+                        <li class="nav-item navssss"><a class="nav-link" href="#!faq">Hỏi Đáp</a></li>
+                        <li class="nav-item navssss"><a class="nav-link" href="#!category">Danh Mục</a></li>
                         <li class="dropdown nav-item">
                             <span class=" dropdown-toggle nav-link" data-bs-toggle="dropdown">
-                              {{student != null ? student.fullname : "Tài Khoản"}}
+                                {{student != null ? student.fullname : "Tài Khoản"}}
                             </span>
                             <ul class="dropdown-menu">
-                               <div ng-show="student==null">
-                                <li><a class="dropdown-item" href="#!register">Đăng ký</a></li>
-                                <li><a class="dropdown-item" href="#!login">Đăng nhập</a></li>
-                                <li><a class="dropdown-item" href="#!forgotpass">Quên Mật khẩu</a></li>
-                               </div>
-                              <div ng-show="student!=null">
-                                <li><a class="dropdown-item" href="#!inforaccoutn">Thông Tin Cá Nhân</a></li>
-                                <li><a class="dropdown-item" href="#!updatepass">Đổi Mật Khẩu</a></li>
-                                <li><a class="dropdown-item" ng-click="logoff()">Đăng Xuất</a></li>
-                              </div>
-                              
+                                <div ng-show="student==null">
+                                    <li><a class="dropdown-item" href="#!register">Đăng ký</a></li>
+                                    <li><a class="dropdown-item" href="#!login">Đăng nhập</a></li>
+                                    <li><a class="dropdown-item" href="#!forgotpass">Quên Mật khẩu</a></li>
+                                </div>
+                                <div ng-show="student!=null">
+                                    <li><a class="dropdown-item" href="#!inforaccoutn">Thông Tin Cá Nhân</a></li>
+                                    <li><a class="dropdown-item" href="#!updatepass">Đổi Mật Khẩu</a></li>
+                                    <li><a class="dropdown-item" ng-click="logoff()">Đăng Xuất</a></li>
+                                </div>
+
                             </ul>
                         </li>
 
@@ -112,7 +124,7 @@
         <div class="container px-5">
             <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                 <div class="col-auto">
-                    <div class="small m-0">Copyright &copy; Your Website 2023</div>
+                    <div class="small m-0">Copyright &copy; TS000 2024</div>
                 </div>
                 <div class="col-auto">
                     <a class="small" href="#!">Privacy</a>

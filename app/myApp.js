@@ -4,6 +4,7 @@ var app = angular.module('myApp', ['ngRoute', 'firebase']);
 
 
 app.run(function ($rootScope, $http, $firebaseArray,$location) {
+
     const firebaseConfig = {
         apiKey: "AIzaSyCYle-bYKo1VhNck7PpJttcplA2iCWCzMU",
         authDomain: "web207-5aca7.firebaseapp.com",
@@ -20,7 +21,7 @@ app.run(function ($rootScope, $http, $firebaseArray,$location) {
     var studentsRef = firebase.database().ref('students');
     // Tạo một $firebaseArray để theo dõi và cập nhật dữ liệu
     $rootScope.students = $firebaseArray(studentsRef);
-
+ 
 
 
     $http.get("./db/Subject.js").then(function (response) {
@@ -32,13 +33,16 @@ app.run(function ($rootScope, $http, $firebaseArray,$location) {
 
 
     $rootScope.student = null;
+   
     $rootScope.students.$loaded().then(function () {
+      
         var rememberedUserID = sessionStorage.getItem('rememberedUserID');
         if (rememberedUserID !== null) {
             $rootScope.students.forEach(function (st) {
                 if (String(st.$id) === String(rememberedUserID)) {
                     console.log('UserId đã lưu:', st.$id);
                     $rootScope.student = st;
+                    
                 }
             });
         } else {
@@ -48,6 +52,7 @@ app.run(function ($rootScope, $http, $firebaseArray,$location) {
     }).catch(function (error) {
         console.error("lỗi loading students:", error);
     });
+ 
 
 
     $rootScope.logoff = function () {

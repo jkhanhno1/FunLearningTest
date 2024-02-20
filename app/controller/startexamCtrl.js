@@ -37,13 +37,13 @@ app.controller('startexamCtrl', function ($scope, $rootScope, $firebaseArray, $r
 
     $scope.finish = function () {
         Swal.fire({
-            title: "Are you sure?",
-            text: "You won't be able to revert this!",
+            title: "Thông Báo",
+            text: "Bạn có muốn kết thúc bài thi?",
             icon: "warning",
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",
-            confirmButtonText: "Yes, delete it!"
+            confirmButtonText: "Đúng, Tôi Muốn Kết Thúc"
         }).then((result) => {
             if (result.isConfirmed) {
                 $scope.timer=5
