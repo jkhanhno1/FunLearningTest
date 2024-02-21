@@ -125,7 +125,7 @@ app.config(function ($routeProvider) {
         })
         .when('/forgotpass', {
             templateUrl: 'layout/forgotpass.html',
-
+            controller: 'forgotpassCtrl'
         })
         .when('/inforaccoutn', {
             templateUrl: 'layout/inforaccoutn.html',

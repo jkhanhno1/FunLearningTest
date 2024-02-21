@@ -34,6 +34,12 @@ app.controller('startexamCtrl', function ($scope, $rootScope, $firebaseArray, $r
             $scope.indexQ = 0
         }
     }
+    $scope.prev = function () {
+        $scope.indexQ--
+        if ($scope.indexQ < 0) {
+            $scope.indexQ = $scope.questions.length - 1
+        }
+    }
 
     $scope.finish = function () {
         Swal.fire({
@@ -46,7 +52,7 @@ app.controller('startexamCtrl', function ($scope, $rootScope, $firebaseArray, $r
             confirmButtonText: "Đúng, Tôi Muốn Kết Thúc"
         }).then((result) => {
             if (result.isConfirmed) {
-                $scope.timer=5
+                $scope.timer=1
             }
 
         });

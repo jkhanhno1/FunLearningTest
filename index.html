@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Thi Trực Tuyến Mới Nhất</title>
+    <title>HONGYOOQUIZZ - Thi Trực Tuyến Mới Nhất</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="./image/home.png" />
     <!-- Custom Google font-->
@@ -15,18 +15,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
         rel="stylesheet" />
-    <!-- Bootstrap icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css"
-        integrity="sha512-SUwyLkI1Wgm4aEZkDkwwigXaOI2HFLy1/YW73asun4sfvlkB9Ecl99+PHfCnfWD0FJjIuFTvWMM7BZPXCckpAA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"
-        integrity="sha512-bUg5gaqBVaXIJNuebamJ6uex//mjxPk8kljQTdM1SwkNrQD7pjS+PerntUSD+QRWPNJ0tq54/x4zRV8bLrLhZg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css"
-        integrity="sha512-42kB9yDlYiCEfx2xVwq0q7hT4uf26FUgSIZBK8uiaEnTdShXjwr8Ip1V4xGJMg3mHkUt9nNuTDxunHF0/EgxLQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- cdn  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.10.5/sweetalert2.all.min.js"
         integrity="sha512-cAiOMQ6IleoiPyH2UGR2k9OCclUh6tFL6RMnFsH26pntGnKyNtjwFpD7CodlP/TvYz+F7vLoBJQmIgSvScdzQA=="
@@ -41,12 +32,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"
         integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.3/angular-route.min.js"
         integrity="sha512-y1qD3hz/IAf8W4+/UMLZ+CN6LIoUGi7srWJ3r1R17Hid8x0yXe+1B5ZelkaL1Mjzedzu0Cg3HBvDG02SAgSzBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
     <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
@@ -61,6 +54,7 @@
     <script src="./app/controller/categoryCtrl.js"></script>
     <script src="./app/controller/examCtrl.js"></script>
     <script src="./app/controller/startexamCtrl.js"></script>
+    <script src="./app/controller/forgotpassCtrl.js"></script>
 
 
 
@@ -73,7 +67,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
             <div class="container px-5">
-                <a class="navbar-brand" href="#!index"><span class="fw-bolder text-primary fs-2">TS000</span></a>
+                <a class="navbar-brand" href="#!index"><span class="fw-bolder text-primary fs-2 text-danger" >HONGYOOQUIZZ</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation"><span
@@ -120,21 +114,42 @@
 
     </main>
     <!-- Footer-->
-    <footer class="bg-white py-4 mt-auto">
-        <div class="container px-5">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto">
-                    <div class="small m-0">Copyright &copy; TS000 2024</div>
+    <footer class="footer footerclose">
+        <footer class="bg text-center text-lg-start">
+
+            <div class="container p-4">
+
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase"> Front-End Web207</h5>
+
+                        <p>
+                             Assignment Lập trình Front-end dùng AngularJs và Bootstrap 5 (Web207) 
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Thi trực tuyến</h5>
+
+                        <p>
+                            Bài Quiz là một dạng bài trắc nghiệm đánh giá, bạn có thể áp dụng để tạo những bài trắc
+                            nghiệm tính cách, bài kiểm tra tự đánh giá bản thân hay bài ôn tập cho học viên. Sau khi
+                            làm xong các câu hỏi sẽ nhận được ngay lời nhận xét theo từng thang điểm mà người làm
+                            đánh giá đạt được.
+                        </p>
+                    </div>
+
                 </div>
-                <div class="col-auto">
-                    <a class="small" href="#!">Privacy</a>
-                    <span class="mx-1">&middot;</span>
-                    <a class="small" href="#!">Terms</a>
-                    <span class="mx-1">&middot;</span>
-                    <a class="small" href="https://www.facebook.com/LQ.TS000">facebook</a>
-                </div>
+
             </div>
-        </div>
+
+            <div class="text-center p-3">
+                © 2024 Copyright:
+                <a class="text-body" href="#">HONGYOOQUIZZ</a>
+            </div>
+
+        </footer>
     </footer>
 
 

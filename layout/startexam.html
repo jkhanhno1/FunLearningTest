@@ -1,11 +1,17 @@
-
-		<div id='container'>
+<div id='container' ">
 		 <div class="card">
-
             <div id='title' class="text-center">
-				<h1 class="p-2">{{subject.Name}}</h1>
-                <h3>Thời gian {{ (timer - timer % 60) / 60
-                }}:{{ timer % 60 }}</h3>
+				<h1 class="p-2"><code>Môn thi</code>: <Strong>{{subject.Name}}</Strong></h1>
+              
+
+                <h3>Câu : <i>
+                  {{ (indexQ+1) 
+                  }}/{{ questions.length}}
+                </i></h3>
+                <h3>Thời gian : <i>
+                  {{ (timer - timer % 60) / 60
+                  }}:{{ timer % 60 }}
+                </i></h3>
 			</div>
             <div class="test p-5">
                 <h3 class="p-2">{{indexQ+1 +"."+questions[indexQ].Text}}</h1>
@@ -16,16 +22,16 @@
                        {{Answers.Text}}
                     </label>
                 </div>
-                 <div class="p-3">
-                    <div class="btn btn-primary"ng-click="finish()" >Kết thúc</div>
-                    <div class="btn btn-primary" ng-click="next()" >Tiếp</div>
-
+                 <div class="p-3 text-center">
+                    <div class="btn btn-light px-3 " ng-click="prev()" ><i class="bx bx-skip-previous-circle display-6"></i>  </div>
+                    <div class="btn btn-light px-3" ng-click="next()" >  <i class="bx bx-skip-next-circle  display-6"></i></div>
+                   
                  </div>
+               <div class="mt-5 text-lg-end">
+                  <div class="btn btn-danger "ng-click="finish()" >Kết thúc bài kiểm tra</div>
+               </div>
             </div>
-         </div>
-
-
-   			
+         </div>	
     	</div>
 
 	

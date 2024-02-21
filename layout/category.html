@@ -1,5 +1,6 @@
 <body>
-    <h1>Các Danh Mục Bài Thi</h1>
+  <p class="text-center h1 fw-light mx-1 mx-md-4 ">Danh mục bài thi </p>
+    <p class="text-center h6 fw-light mb-5 mx-1 mx-md-4 ">chọn môn thi theo môn học và chúc bạn thi tốt  </p>
     <div class="py-5">
       <div class="row row-cols-1 row-cols-md-3 g-4">
 
@@ -9,7 +10,7 @@
             <img ng-src="image/logos/{{item.Logo}}" class="card-img-top"
             alt="Hollywood Sign on The Hill" />
           <div class="card-body">
-            <h5 class="card-title">{{item.Name}}</h5>
+            <h5 class="card-title text-center text-danger ">Môn : <i> {{item.Name}}</i></h5>
             <p class="card-text">
             </p>
           </div>
@@ -20,8 +21,8 @@
       </div>
     </div>
     <div class="text-center">
-        <div class="btn btn-success" ng-click="prev()">prev</div>
-        <div class="btn btn-success" ng-click="next()">next</div>
+        <div class="btn btn-danger px-3" ng-click="prev()"><</div>
+        <div class="btn btn-danger px-3" ng-click="next()">></div>
 
     </div>
     
