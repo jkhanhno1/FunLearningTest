@@ -6,14 +6,14 @@ var app = angular.module('myApp', ['ngRoute', 'firebase']);
 app.run(function ($rootScope, $http, $firebaseArray,$location) {
 
     const firebaseConfig = {
-        apiKey: "AIzaSyCYle-bYKo1VhNck7PpJttcplA2iCWCzMU",
-        authDomain: "web207-5aca7.firebaseapp.com",
-        databaseURL: "https://web207-5aca7-default-rtdb.firebaseio.com",
-        projectId: "web207-5aca7",
-        storageBucket: "web207-5aca7.appspot.com",
-        messagingSenderId: "745123299741",
-        appId: "1:745123299741:web:2196432e15b2f22438af74",
-        measurementId: "G-6WNR84SZTY"
+        apiKey: "AIzaSyCYfz2GejeuEbB5nUZtl57MmwCwBliZ9ec",
+        authDomain: "jkhanhno1-3c996.firebaseapp.com",
+        databaseURL: "https://jkhanhno1-3c996-default-rtdb.firebaseio.com",
+        projectId: "jkhanhno1-3c996",
+        storageBucket: "jkhanhno1-3c996.appspot.com",
+        messagingSenderId: "502632115706",
+        appId: "1:502632115706:web:17b485334f1c4735dc0843",
+        measurementId: "G-WQ0WQKQP4Z"
     };
     firebase.initializeApp(firebaseConfig);
 

@@ -3,6 +3,7 @@ app.controller('accountCtrl', function ($scope, $rootScope, $firebaseArray) {
     var studentsRef = firebase.database().ref('students');
     // Tạo một $firebaseArray để theo dõi và cập nhật dữ liệu
     $rootScope.students = $firebaseArray(studentsRef);
+    
     $scope.account = function () {  
         // Lấy dữ liệu từ các biến initial
         var updatedStudent = {

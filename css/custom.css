@@ -1,7 +1,14 @@
 .active{
-  color: red !important;
+  color: rgb(0, 170, 255) !important;
   background-color: rgba(240, 248, 255, 0) !important;
 }
 a{
   text-decoration: none;
+}
+.text-danger{
+  color: rgb(0, 170, 255) !important;
+}
+.btn-danger{
+  background-color: rgb(0, 170, 255) !important;
+  border: none ;
 }

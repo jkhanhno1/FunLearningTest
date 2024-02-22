@@ -22,6 +22,7 @@ app.controller('startexamCtrl', function ($scope, $rootScope, $firebaseArray, $r
         $scope.questions = $scope.randomQuestions;
         console.log($scope.questions)
     });
+    
     $scope.testMark = 0; // điểm 
     $scope.indexQ = 0; //vị trí câu hiện tại
     $scope.timer = 900; // thời gian làm bài thi

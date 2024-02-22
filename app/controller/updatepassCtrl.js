@@ -3,6 +3,8 @@ app.controller('updatepassCtrl', function ($scope, $rootScope, $firebaseArray) {
     var studentsRef = firebase.database().ref('students');
     // Tạo một $firebaseArray để theo dõi và cập nhật dữ liệu
     $rootScope.students = $firebaseArray(studentsRef);
+
+    
     $scope.updatepass = function () {
         if ($rootScope.student.password !== $scope.studentR.passwordold) {
             Swal.fire({
